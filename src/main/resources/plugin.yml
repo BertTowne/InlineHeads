@@ -1,0 +1,5 @@
+name: InlineHeads
+author: Bert Towne
+api-version: 1.20
+main: com.berttowne.inlineheads.InlineHeadsPlugin
+version: ${project.version}

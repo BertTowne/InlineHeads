@@ -1,0 +1,10 @@
+# DO NOT EDIT UNLESS YOU KNOW WHAT YOU ARE DOING!
+# You should only change this if your server already has a default resource pack.
+# In that case, you MUST FIRST manually add the "Pixelized" resource pack below
+# into your own resource pack, and then change the url and hash to that of the
+# resulting resource pack. I recommend hosting the resource pack at
+# https://mc-packs.net for ease of use.
+resource-pack:
+  url: https://download.mc-packs.net/pack/dc8a32c9e88f80e375eb61e89709f1aa40ec0803.zip
+  hash: dc8a32c9e88f80e375eb61e89709f1aa40ec0803
+  generate-hash: true

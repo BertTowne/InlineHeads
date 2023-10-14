@@ -5,6 +5,6 @@
 # resulting resource pack. I recommend hosting the resource pack at
 # https://mc-packs.net for ease of use.
 resource-pack:
-  url: https://download.mc-packs.net/pack/dc8a32c9e88f80e375eb61e89709f1aa40ec0803.zip
-  hash: dc8a32c9e88f80e375eb61e89709f1aa40ec0803
+  url: https://download.mc-packs.net/pack/ae9d81fa0a3b6c8648c80d8de087c5f086b65db7.zip
+  hash: ae9d81fa0a3b6c8648c80d8de087c5f086b65db7
   generate-hash: true

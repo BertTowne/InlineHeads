@@ -6,12 +6,10 @@ import com.google.common.cache.CacheBuilder;
 import com.google.common.cache.CacheLoader;
 import com.google.common.cache.LoadingCache;
 import com.google.inject.Singleton;
-import io.papermc.paper.event.player.AsyncChatEvent;
 import net.kyori.adventure.key.Key;
 import net.kyori.adventure.text.Component;
 import net.kyori.adventure.text.TextComponent;
 import net.kyori.adventure.text.format.TextColor;
-import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 
 import javax.annotation.Nonnull;
@@ -63,15 +61,6 @@ public class InlineHeadsService implements Service, Listener {
         }
 
         return component.build();
-    }
-
-    @EventHandler
-    public void onAsyncChat(@Nonnull AsyncChatEvent event) {
-        event.renderer((player, displayName, message, viewer) ->
-                getHead(player.getName())
-                        .append(Component.text(" "))
-                        .append(displayName).append(Component.text(": "))
-                        .append(message));
     }
 
 }

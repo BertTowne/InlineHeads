@@ -87,3 +87,6 @@ Then, you can use the service to get a Component that contains a player's head:
 ```java
 Component head = inlineHeadsService.getHead(playerName);
 ```
+**WARNING:** This method accesses the Minotar API, so it is recommended to use it sparingly and MUST BE DONE ASYNCHRONOUSLY to avoid blocking the main thread.
+
+The images retrieved from the Minotar API are cached for 10 minutes after their last time being accessed, so if you need to get the same head multiple times, it will not make multiple requests to the API.

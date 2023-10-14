@@ -25,6 +25,9 @@ import java.util.concurrent.ExecutionException;
 @AutoService({Service.class, Listener.class})
 public class InlineHeadsService implements Service, Listener {
 
+    /**
+     * A cache of player heads from minotar.net, with a 10 minute expiry to avoid spamming the service.
+     */
     private final LoadingCache<String, BufferedImage> headCache = CacheBuilder.newBuilder()
             .expireAfterAccess(Duration.of(10, ChronoUnit.MINUTES))
             .build(new CacheLoader<>() {
@@ -37,6 +40,14 @@ public class InlineHeadsService implements Service, Listener {
         }
     });
 
+    /**
+     * Get a component representing the head of the given player.
+     * <b>WARNING:</b> This method will block the current thread while it fetches the head from minotar.net if it isn't already cached, so it is recommended to call this method asynchronously.
+     *
+     * @param skullOwner The name of the player to get the head of.
+     * @return A component representing the head of the given player.
+     */
+    @Nonnull
     public Component getHead(@Nonnull String skullOwner) {
         TextComponent.Builder component = Component.text("").toBuilder();
 

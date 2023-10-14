@@ -10,7 +10,6 @@ import net.kyori.adventure.key.Key;
 import net.kyori.adventure.text.Component;
 import net.kyori.adventure.text.TextComponent;
 import net.kyori.adventure.text.format.TextColor;
-import org.bukkit.event.Listener;
 
 import javax.annotation.Nonnull;
 import javax.imageio.ImageIO;
@@ -22,8 +21,8 @@ import java.util.concurrent.ExecutionException;
 
 @Singleton
 @SuppressWarnings("unused")
-@AutoService({Service.class, Listener.class})
-public class InlineHeadsService implements Service, Listener {
+@AutoService(Service.class)
+public class InlineHeadsService implements Service {
 
     /**
      * A cache of player heads from minotar.net, with a 10 minute expiry to avoid spamming the service.

@@ -16,7 +16,8 @@
 
 InlineHeads allows plugin developers to easily insert player heads into scoreboards, chat messages, and anywhere else that supports TextComponents.
 
-Here is an example of how it looks in chat -
+Here is an example of how it looks in chat:
+
 ![](https://i.gyazo.com/2d4a9e4fc810b5d4991e42a72a1fed78.png)
 
 See that head next to my name? That's my capybara skin's head, in full resolution, in a single line of chat.

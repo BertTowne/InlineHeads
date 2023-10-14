@@ -1,6 +1,6 @@
 # InlineHeads
 
-[![](https://jitci.com/gh/BertTowne/InlineHeads/svg)](https://jitci.com/gh/BertTowne/InlineHeads)
+[![JitPack](https://jitpack.io/v/BertTowne/InlineHeads.svg)](https://jitpack.io/#BertTowne/InlineHeads)
 ![GitHub repo size](https://img.shields.io/github/repo-size/BertTowne/InlineHeads)
 ![GitHub issues](https://img.shields.io/github/issues-raw/BertTowne/InlineHeads)
 ---

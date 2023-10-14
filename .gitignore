@@ -1,2 +1,14 @@
 # Project exclude paths
 /target/
+
+# IDE files
+/.idea
+/.project
+/.classpath
+/.settings
+/*.iml
+/*.ipr
+/*.iws
+
+# Maven files
+dependency-reduced-pom.xml

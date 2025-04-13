@@ -1,0 +1,13 @@
+name: InlineHeads
+author: Bert Towne
+description: Allows the use of player heads in text.
+version: ${project.version}
+api-version: '1.21.4'
+folia-supported: true
+main: com.berttowne.inlineheads.InlineHeadsPlugin
+loader: com.berttowne.inlineheads.InlineHeadsLoader
+dependencies:
+    server:
+        MiniPlaceholders:
+            load: BEFORE
+            required: false

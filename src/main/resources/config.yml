@@ -4,7 +4,9 @@
 # into your own resource pack, and then change the url and hash to that of the
 # resulting resource pack. I recommend hosting the resource pack at
 # https://mc-packs.net for ease of use.
+#
+# Pixelized Source: https://github.com/BertTowne/Pixelized
 resource-pack:
-  url: https://download.mc-packs.net/pack/ae9d81fa0a3b6c8648c80d8de087c5f086b65db7.zip
-  hash: ae9d81fa0a3b6c8648c80d8de087c5f086b65db7
+  url: https://download.mc-packs.net/pack/e0b2a9e2459f597c0336fcae710c45d43a61f0de.zip
+  hash: e0b2a9e2459f597c0336fcae710c45d43a61f0de
   generate-hash: true

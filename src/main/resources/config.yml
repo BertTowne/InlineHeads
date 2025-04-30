@@ -7,6 +7,7 @@
 #
 # Pixelized Source: https://github.com/BertTowne/Pixelized
 resource-pack:
+  enabled: true   # Set to false only if you wish to send the resource pack through another plugin, such as ForcePack.
   url: https://download.mc-packs.net/pack/e0b2a9e2459f597c0336fcae710c45d43a61f0de.zip
   hash: e0b2a9e2459f597c0336fcae710c45d43a61f0de
   generate-hash: true

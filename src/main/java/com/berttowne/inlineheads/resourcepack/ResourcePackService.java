@@ -29,6 +29,7 @@ public class ResourcePackService implements Service, Listener {
     private final InlineHeadsPlugin plugin;
     private final HexFormat hexFormat = HexFormat.of();
 
+    private boolean resourcePackEnabled = true;
     private ResourcePackInfo resourcePackInfo;
 
     @Inject
@@ -39,8 +40,16 @@ public class ResourcePackService implements Service, Listener {
     @Override
     public void onLoad() {
         // Load resource pack
+        boolean enabled = plugin.getConfig().getBoolean("resource-pack.enabled", true);
         String rpUrl = plugin.getConfig().getString("resource-pack.url");
         String rpHash = plugin.getConfig().getString("resource-pack.hash");
+
+        if (!enabled) {
+            plugin.getLogger().severe("Resource pack is disabled in the config! This plugin will not work unless you are" +
+                    " sending the resource pack through another method.");
+            this.resourcePackEnabled = false;
+            return;
+        }
 
         if (rpUrl == null) {
             plugin.getLogger().severe("** RESOURCE PACK URL NOT SET **");
@@ -69,6 +78,8 @@ public class ResourcePackService implements Service, Listener {
 
     @EventHandler
     public void onPlayerJoin(@NotNull PlayerJoinEvent event) {
+        if (!resourcePackEnabled || resourcePackInfo == null) return;
+
         event.getPlayer().sendResourcePacks(ResourcePackRequest.resourcePackRequest()
                 .packs(resourcePackInfo)
                 .required(true)

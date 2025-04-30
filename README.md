@@ -55,7 +55,7 @@ Dependency:
 <dependency>
     <groupId>com.github.BertTowne</groupId>
     <artifactId>InlineHeads</artifactId>
-    <version>v1.1.0</version>
+    <version>v1.1.1</version>
 </dependency>
 ```
 
@@ -74,7 +74,7 @@ dependencyResolutionManagement {
 Dependency:
 ```groovy
 dependencies {
-    implementation 'com.github.BertTowne:InlineHeads:v1.1.0'
+    implementation 'com.github.BertTowne:InlineHeads:v1.1.1'
 }
 ```
 
